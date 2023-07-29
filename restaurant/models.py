@@ -6,7 +6,7 @@ class Menu(models.Model):
     name = models.CharField(max_length=50)
     slug = models.SlugField(max_length=50)
         
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
 
 class Product(models.Model):
