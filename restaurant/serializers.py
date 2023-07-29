@@ -5,20 +5,20 @@ from .models import *
 
 
 class MenuSerializers(serializers.ModelSerializer):
-    
-    model = Menu
-    fields = "__all__"
+    class Meta:
+        model = Menu
+        fields = "__all__"
     
     
 
 class ProductSerializers(serializers.ModelSerializer):
-    
-    model = Product
-    fields = "__all__"
+    class Meta:
+        model = Product
+        fields = "__all__"
     
     
 
 class BuySerializers(serializers.ModelSerializer):
-    
-    model = Buy
-    fields = "__all__"
+    class Meta:
+        model = Buy
+        fields = "__all__"
