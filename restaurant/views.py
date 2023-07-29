@@ -6,9 +6,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.decorators import api_view
-from rest_framework.generics import RetrieveUpdateDestroyAPIView, ListCreateAPIView
+# from rest_framework.generics import RetrieveUpdateDestroyAPIView, ListCreateAPIView
 
-# Create your views here.
+
 class MenuViewSet(viewsets.ModelViewSet):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializers
